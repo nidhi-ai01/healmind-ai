@@ -361,8 +361,9 @@ export default function Dashboard() {
 
         try {
 
+            const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://healmind-backend.onrender.com";
             const response = await fetch(
-                "http://127.0.0.1:8000/chat",
+                `${API_URL}/chat`,
                 {
                     method: "POST",
                     headers: {
@@ -435,8 +436,9 @@ export default function Dashboard() {
 
         try {
 
+            const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://healmind-backend.onrender.com";
             const response = await fetch(
-                "http://127.0.0.1:8000/chat",
+                `${API_URL}/chat`,
                 {
                     method: "POST",
                     headers: {
