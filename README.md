@@ -110,9 +110,7 @@ AI journaling assistant
 This project is inspired by the growing need for emotionally aware AI systems and human-centered wellness technologies.
 
 👩‍💻 Author
-
 Developed by Nidhi
-AI Developer | Full Stack Developer | Generative AI Enthusiast
 
 GitHub:
 https://github.com/nidhi-ai01
