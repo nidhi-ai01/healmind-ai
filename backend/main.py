@@ -25,8 +25,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Initialize FER detector
-detector = FER(mtcnn=True)
+detector = None
+
+def get_detector():
+    global detector
+    if detector is None:
+        detector = FER(mtcnn=True)
+    return detector
 
 # Initialize Groq client
 groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
@@ -48,7 +53,7 @@ async def detect_emotion(file: UploadFile = File(...)):
 
     img = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
 
-    result = detector.detect_emotions(img)
+    result = get_detector().detect_emotions(img)
 
     if result:
         emotions = result[0]["emotions"]
