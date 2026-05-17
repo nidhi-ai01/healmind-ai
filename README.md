@@ -7,7 +7,7 @@ An emotionally intelligent AI wellness companion that understands facial express
 ## 🚀 Live Demo
 
 🌐 Live App:  
-https://healmind-44wegs3yf-nidhis-projects-cdd74adb.vercel.app/
+https://healmind-ai.vercel.app/
 
 💻 GitHub Repository:  
 https://github.com/nidhi-ai01/healmind-ai
